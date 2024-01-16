@@ -1,0 +1,30 @@
+{% extends "../layout/base.html" %}
+
+{% block title %}
+  {% if let Some(title) = title %}
+    {{ title }}
+  {% endif %}
+{% endblock %}
+
+{% block head %}
+  <style>
+    .login_section {
+      height: 100%;
+      overflow: hidden;
+      background-image: url("static/img/bg_fotor_3.jpg");
+      background-size: cover;
+    }
+  </style>
+{% endblock %}
+
+{% block body%}
+    {% include "../layout/navbar.html" %}
+    {% if let Some(message) = message %}
+    <span><strong>{{ message }}</strong></span>
+    {% endif %}
+    <section class="columns mt-0 mb-0 is-centered is-vcentered login_section">
+      <div class="column is-half">
+        <p class="notification">lorem ipsum content</p>
+      </div>
+    </section>
+{% endblock %}
