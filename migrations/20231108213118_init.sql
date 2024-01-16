@@ -6,10 +6,10 @@ create table if not exists users
     password text not null
 );
 
--- Insert "ferris" user.
+-- Insert "ranghi" user, pwd "latini".
 insert into users (id, username, password)
-values (1, 'ferris', '$argon2id$v=19$m=19456,t=2,p=1$VE0e3g7DalWHgDwou3nuRA$uC6TER156UQpk0lNQ5+jHM0l5poVjPA1he/Tyn9J4Zw');
+values (1, 'ranghi', '$argon2id$v=19$m=19456,t=2,p=1$gHZ82/l2eha46TH9XWwUdQ$TgvNvy2xnwfKKfN69Kch7/RtJu2qx0hIH40L4vKHN7s');
 
--- Insert "ferris" user.
+-- Insert "tanque" user, pwd "slavaukraini".
 insert into users (id, username, password)
-values (2, 'tng_padova', '$argon2id$v=19$m=19456,t=2,p=1$WdDEcymi15daz05bl7NoEw$egEHohVmklmk1ExVTuL+ocMpoXvpafvIG4oq6l4KjoU');
+values (2, 'tanque', '$argon2id$v=19$m=19456,t=2,p=1$g82u5m59TiDxumUj9lB1pg$IlZ2OAFArNdKP0DZEw25o0HRLJp1f6tmF6U7v3jWPmc');
