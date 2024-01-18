@@ -10,7 +10,7 @@ use tower_http::services::ServeDir;
 
 use crate::{
     users::Backend,
-    web::{auth, protected},
+    web::{auth, protected, public},
 };
 
 pub struct App {
@@ -53,6 +53,7 @@ impl App {
         let app = protected::router()
             .route_layer(login_required!(Backend, login_url = "/login"))
             .merge(auth::router())
+            .merge(public::router())
             .layer(auth_layer)
             .nest_service("/static", ServeDir::new("static"));
 
