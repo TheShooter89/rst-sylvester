@@ -14,20 +14,58 @@
       background-image: url("static/img/bg_home.jpg");
       background-size: cover;
     }
+    .about_column {
+      max-height: 82vh;
+    }
+    .about_column_title {
+      max-height: 15%;
+      overflow: auto;
+    }
+    .about_column_content {
+      max-height: 85%;
+      overflow: auto;
+    }
+    /* Custom scrollbar styles for Webkit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Color of the thumb (the draggable part) */
+      border-radius: 6px; /* Radius of the thumb */
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent; /* Color of the track (the non-draggable part) */
+    }
+
+    /* Optional: Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #686868;
+    }
   </style>
 {% endblock %}
 
 {% block body%}
     {% include "../layout/navbar.html" %}
     {% if let Some(message) = message %}
-    <span><strong>{{ message }}</strong></span>
+    <!-- <span><strong>{{ message }}</strong></span> -->
     {% endif %}
     <section class="columns mt-0 mb-0 is-centered is-vcentered about_body">
-      <div class="column is-half">
-        <p class="notification">lorem ipsum content</p>
-        {% include "../../content/example.html" %}
-        <button class="button">hmx example</button>
-        <div id="htmx_example_target"class="notification"></div>
+      <div class="column pt-0 pb-0 is-half about_column">
+        <div class="about_column_title">
+          <div class="is-flex mb-5 is-justify-content-center">
+            <section class="notification">
+              <h2 class="title is-3">Under the hood</h2>
+            </section>
+          </div>
+        </div>
+
+        <div class="columns about_column_content">
+          <div class="column p-0">
+            {% include "../../content/about_page.html" %}
+          </div>
+        </div>
       </div>
     </section>
 {% endblock %}
