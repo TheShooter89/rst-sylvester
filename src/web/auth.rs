@@ -11,7 +11,7 @@ use serde::Deserialize;
 use crate::users::{AuthSession, Credentials};
 
 #[derive(Template)]
-#[template(path = "login/login.html")]
+#[template(path = "components/login/login.html")]
 pub struct LoginTemplate {
     is_logged: bool,
     title: Option<String>,

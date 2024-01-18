@@ -7,7 +7,7 @@ use tower_http::services::ServeDir;
 use crate::users::AuthSession;
 
 #[derive(Template)]
-#[template(path = "home/home.html")]
+#[template(path = "components/home/home.html")]
 struct HomeTemplate<'a> {
     is_logged: bool,
     username: &'a str,
