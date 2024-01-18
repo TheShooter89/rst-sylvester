@@ -7,7 +7,7 @@ use tower_http::services::ServeDir;
 use crate::users::AuthSession;
 
 #[derive(Template)]
-#[template(path = "home/home.html")]
+#[template(path = "about/about.html")]
 struct AboutTemplate<'a> {
     is_logged: bool,
     username: &'a str,
@@ -28,8 +28,6 @@ pub fn router() -> Router<()> {
 }
 
 pub mod get {
-    use tower::util::error::optional::None;
-
     use super::*;
 
     pub async fn about(auth_session: AuthSession) -> impl IntoResponse {
