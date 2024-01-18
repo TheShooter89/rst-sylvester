@@ -5,5 +5,5 @@ use super::about;
 pub fn router() -> Router<()> {
     let about_routes = about::router();
 
-    Router::new().nest("/", about_routes)
+    Router::new().nest("/about", about_routes)
 }
