@@ -8,7 +8,7 @@ use crate::users::AuthSession;
 use super::home;
 
 #[derive(Template)]
-#[template(path = "_testing/protected.html")]
+#[template(path = "components/_testing/protected.html")]
 struct ProtectedTemplate<'a> {
     username: &'a str,
 }
