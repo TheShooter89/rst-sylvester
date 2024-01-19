@@ -16,6 +16,7 @@
     }
     .about_column {
       max-height: 82vh;
+      contain: paint;
     }
     .about_column_title {
       max-height: 15%;
@@ -53,7 +54,7 @@
     {% endif %}
     <section class="columns mt-0 mb-0 is-centered is-vcentered about_body">
       <div class="column pt-0 pb-0 is-half about_column">
-        <div class="about_column_title">
+        <div class="mb-0 about_column_title">
           <div class="is-flex mb-5 is-justify-content-center">
             <section class="notification">
               <h2 class="title is-3">Under the hood</h2>
@@ -61,7 +62,7 @@
           </div>
         </div>
 
-        <div class="columns about_column_content">
+        <div class="columns mb-0 mt-3 about_column_content">
           <div class="column p-0">
             {% include "../../content/about_page.html" %}
           </div>
