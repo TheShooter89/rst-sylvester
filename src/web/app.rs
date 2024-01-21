@@ -10,6 +10,7 @@ use tower_http::services::ServeDir;
 
 use crate::{
     users::Backend,
+    utils::generate_qrcode_link,
     web::{auth, protected, public},
 };
 
@@ -21,6 +22,7 @@ impl App {
     pub async fn new() -> Result<Self, Box<dyn std::error::Error>> {
         let db = SqlitePool::connect(":memory:").await?;
         sqlx::migrate!().run(&db).await?;
+        generate_qrcode_link().unwrap();
 
         Ok(Self { db })
     }

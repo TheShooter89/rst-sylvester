@@ -9,6 +9,7 @@ use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt, EnvFilte
 use crate::web::App;
 
 mod users;
+mod utils;
 mod web;
 
 // helper function to generate new password hashes
