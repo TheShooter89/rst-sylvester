@@ -1,3 +1,6 @@
 /target
 node_modules/
 /static/_TEMP
+
+# complie-time generated static assets
+static/img/qrcode_link.png
