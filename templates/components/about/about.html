@@ -7,44 +7,7 @@
 {% endblock %}
 
 {% block head %}
-  <style>
-    .about_body {
-      height: 100%;
-      overflow: hidden;
-      background-image: url("static/img/bg_home.jpg");
-      background-size: cover;
-    }
-    .about_column {
-      max-height: 82vh;
-      contain: paint;
-    }
-    .about_column_title {
-      max-height: 15%;
-      overflow: auto;
-    }
-    .about_column_content {
-      max-height: 85%;
-      overflow: auto;
-    }
-    /* Custom scrollbar styles for Webkit browsers (Chrome, Safari, Edge) */
-    ::-webkit-scrollbar {
-      width: 12px; /* Width of the scrollbar */
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: transparent; /* Color of the thumb (the draggable part) */
-      border-radius: 6px; /* Radius of the thumb */
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: transparent; /* Color of the track (the non-draggable part) */
-    }
-
-    /* Optional: Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #686868;
-    }
-  </style>
+  <link rel="stylesheet" href="/static/css/pages/about.css">
 {% endblock %}
 
 {% block body%}
