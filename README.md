@@ -1,3 +1,4 @@
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
 
 # rst-sylvester
 
@@ -68,6 +69,10 @@ Please contribute and donate through official government channels or globally-kn
 - **Protect A Volunteer**: Independent matching platform to support a Volunteer on the frontline
     
     [Protect a Volunteer site](https://protectavolunteer.com/)
+
+Or use below badge:
+
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
 
 ---
 
