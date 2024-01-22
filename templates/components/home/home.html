@@ -12,13 +12,24 @@
 
 {% block body%}
     {% include "../layout/navbar.html" %}
-    {% if let Some(message) = message %}
-    <span><strong>{{ message }}</strong></span>
-    {% endif %}
-    <section class="columns mt-0 mb-0 is-centered is-vcentered login_section">
-      <div class="column is-half">
-        <p class="notification">lorem ipsum content</p>
-        <img class="image" src="static/img/qrcode_link.png" />
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-8 is-variable">
+            <!-- LEFT: main image container -->
+            <div class="column is-two-thirds has-text-left">
+              <img class="image" src="static/img/qrcode_link.png" />
+            </div>
+
+            <!-- RIGHT: QR code and edit prompt -->
+            <div class="column is-one-third has-text-left">
+              <img class="image" src="static/img/qrcode_link.png" />
+              {% if let Some(message) = message %}
+              <p><span><strong>{{ message }}</strong></span></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 {% endblock %}

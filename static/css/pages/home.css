@@ -1,6 +1,4 @@
-.login_section {
-  height: 100%;
-  overflow: hidden;
+section.hero {
   background-image: url("/static/img/bg_home.jpg");
   background-size: cover;
 }
