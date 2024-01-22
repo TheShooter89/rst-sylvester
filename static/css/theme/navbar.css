@@ -1,0 +1,4 @@
+/* BUTTONS & CONTROLS OVERRIDES */
+.navbar .navbar-item {
+  font-family: BlinkMacSystemFont, -apple-system, "Oswald", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
