@@ -1,8 +1,17 @@
-<div class="box">
-  <figure class="image">
-    <img src="static/img/qrcode_link.png" />
-  </figure>
-  {% if let Some(message) = message %}
-  <p><span><strong>{{ message }}</strong></span></p>
-  {% endif %}
+<div class="box home_box">
+  <div class="home_box_container">
+    <div class="home_box_top">
+      <!-- QRcode row -->
+      <figure class="image">
+        <img src="static/img/qrcode_link.png" />
+      </figure>
+    </div>
+
+    <div class="home_box_bottom">
+      <!-- prompt row -->
+      {% if let Some(message) = message %}
+      <p><span><strong>{{ message }}</strong></span></p>
+      {% endif %}
+    </div>
+  </div>
 </div>

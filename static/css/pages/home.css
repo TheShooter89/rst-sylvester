@@ -2,3 +2,24 @@ body {
   background-image: url("/static/img/bg_home.jpg");
   background-size: cover;
 }
+
+.home_box {
+  height: 100%;
+}
+
+.home_box_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.home_box_top {
+  flex: 1;
+  position: sticky;
+  top: 0;
+}
+
+.home_box_bottom {
+  /**/
+}
