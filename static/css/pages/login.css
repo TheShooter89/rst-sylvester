@@ -1,0 +1,6 @@
+.login_section {
+  height: 100%;
+  overflow: hidden;
+  background-image: url("/static/img/bg_login.jpg");
+  background-size: cover;
+}

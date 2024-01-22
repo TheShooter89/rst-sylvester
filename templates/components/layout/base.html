@@ -1,11 +1,30 @@
 <html>
   <head>
     <title>{% block title %}{{title}}{% endblock %}</title>
-    {% block head %}{{head}}{% endblock %}
     <script src="static/js/main.js"></script>
+
+    <!-- Bulma CSS framework (via CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="static/css/base.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Barlow: primary font (via Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Oswald: secondary font - titles and nav menu labels font (via Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Big Shoulders Text + Display: alternative font (via Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- custom theme styles -->
+    <link rel="stylesheet" href="static/css/theme/base.css">
+    <link rel="stylesheet" href="static/css/theme/fonts.css">
+
+    <!-- HTMX framework (via CDN) -->
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    {% block head %}{{head}}{% endblock %}
   </head>
 
   <body class="has-navbar-fixed-top">
