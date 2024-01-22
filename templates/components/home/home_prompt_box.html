@@ -1,0 +1,8 @@
+<div class="box">
+  <figure class="image">
+    <img src="static/img/qrcode_link.png" />
+  </figure>
+  {% if let Some(message) = message %}
+  <p><span><strong>{{ message }}</strong></span></p>
+  {% endif %}
+</div>
