@@ -1,8 +1,10 @@
+body {
+  background-image: url("/static/img/bg_home.jpg");
+  background-size: cover;
+}
 .about_body {
   height: 100%;
   overflow: hidden;
-  background-image: url("/static/img/bg_home.jpg");
-  background-size: cover;
 }
 .about_column {
   max-height: 82vh;

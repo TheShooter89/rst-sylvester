@@ -11,10 +11,6 @@
 {% endblock %}
 
 {% block body%}
-    {% include "../layout/navbar.html" %}
-    {% if let Some(message) = message %}
-    <span><strong>{{ message }}</strong></span>
-    {% endif %}
     <section class="columns mt-0 mb-0 is-centered is-vcentered login_section">
       <div class="column is-half">
         {% include "login_card.html" %}
