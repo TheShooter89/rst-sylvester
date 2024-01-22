@@ -6,6 +6,9 @@
     <!-- Bulma CSS framework (via CDN) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
+    <!-- Font Awesome icon kit -->
+    <script src="https://kit.fontawesome.com/86deed0850.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +24,14 @@
     <!-- custom theme styles -->
     <link rel="stylesheet" href="static/css/theme/base.css">
     <link rel="stylesheet" href="static/css/theme/fonts.css">
+    <link rel="stylesheet" href="static/css/theme/navbar.css">
 
     <!-- HTMX framework (via CDN) -->
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
     {% block head %}{{head}}{% endblock %}
   </head>
 
-  <body class="has-navbar-fixed-top">
+  <body>
     {% block body%}{{body}}{% endblock %}
   </body>
 </html>
